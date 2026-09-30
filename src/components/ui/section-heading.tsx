@@ -1,0 +1,1 @@
+export function SectionHeading({eyebrow,title,copy,center=false}:{eyebrow?:string;title:string;copy?:string;center?:boolean}){return <div className={center?"text-center mx-auto":""}><>{eyebrow&&<div className="eyebrow">{eyebrow}</div>}<h2 className="section-title">{title}</h2>{copy&&<p className="section-copy" style={center?{marginInline:"auto"}:undefined}>{copy}</p>}</></div>}
